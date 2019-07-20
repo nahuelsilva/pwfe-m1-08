@@ -1,0 +1,52 @@
+/* anatomia de las reglas de css */
+/*
+  selector {
+   propiedad: valor;
+   propiedad: valor;
+   propiedad: valor;
+ }
+*/
+body{
+  font-family: Arial;
+  font-size: 18px;
+  color: orangered;
+  background-color: #000;
+  text-align: justify;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: tahoma;
+  color: orangered
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+}
+a {
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  font-family: Helvetica, Arial, Open Sans, Sans-Serif;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a:hover {
+  color: orange;
+  background-color: darkblue;
+}
+p {
+  line-height: 1.5;
+}
+#foto-linus {
+  display: block;
+  margin: 0 auto 0 auto;
+  border-top: solid 5px white;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  border-bottom: solid 25px white;
+}

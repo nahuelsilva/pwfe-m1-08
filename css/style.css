@@ -2,6 +2,7 @@ body {
   font-family: "arial";
   font-size: 14px;
   margin: 0;
+  overflow-x: hidden;
 }
 header {
   background-color: #171717;
@@ -40,3 +41,48 @@ header ul li{
 header nav{
   float: right;
 }
+img{
+
+  display: block;
+  width: 100%
+}
+#noticias-destacadas{
+  width: calc(100vw * 3);
+  overflow: hidden;
+  background-color: #171717;
+  position: relative;
+  animation: 15s slider infinite;
+}
+#noticias-destacadas figure {
+  width: 100vw;
+  float: left;
+}
+#noticias-destacadas h2{
+  font-size: 42px;
+  font-weight: 600;
+  background-color: #171717;
+  padding: 10px;
+  color: #FFF;
+}
+ /* Animaciones CSS */
+ @keyframes slider {
+
+   0% {
+     left: 0;
+   }
+   20% {
+     left: 0;
+   }
+   40% {
+     left: -100vw;
+   }
+   60% {
+     left: -100vw;
+   }
+   80% {
+     left: -200vw;
+   }
+   100% {
+     left: 0vw;
+   }
+ }

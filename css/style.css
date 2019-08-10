@@ -108,32 +108,45 @@ padding-bottom: 15px;
 }
 
 
+#tabla-posiciones table {
+border: solid 1px red;
+width: 80%;
+margin: auto;
+}
+
+#tabla-posiciones td {
+  padding: 5px;
+  vertical-align: middle;
+
+}
+
+#tabla-posiciones th{
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+#tabla-posiciones tr {
+  background-color: #d9d9d9;
+  border-bottom: solid 1px #aaa;
+}
 
 
+#tabla-posiciones tr:first-child
+#tabla-posiciones tr:last-child {
+  border: none;
+}
 
 
+#tabla-posiciones td:nth-child(odd){
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+}
 
-
-
- /* Animaciones CSS */
- @keyframes slider {
-
-   0% {
-     left: 0;
-   }
-   20% {
-     left: 0;
-   }
-   40% {
-     left: -100vw;
-   }
-   60% {
-     left: -100vw;
-   }
-   80% {
-     left: -200vw;
-   }
-   100% {
-     left: 0vw;
-   }
+#tabla-posiciones td span{
+  color: #00ad9b;
 }

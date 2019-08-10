@@ -67,6 +67,33 @@ img{
   padding: 10px;
   color: #FFF;
 }
+
+.noticia { /* contenedor flexible */
+display: flex;
+flex-direction: row;
+justify-content: space-evenly; /* flex-star¡ center¡ flex-end¡ space-around ¡ flex-end ¡ */
+align-items: center; /* flex-star ¡ center ¡ flex-end ¡ strech */
+
+}
+
+.noticia-img { /*item flexible */
+
+  width: 25%
+}
+
+.noticia-txt { /*item flexible */
+  width: 65%
+
+}
+
+
+
+
+
+
+
+
+
  /* Animaciones CSS */
  @keyframes slider {
 
@@ -88,4 +115,4 @@ img{
    100% {
      left: 0vw;
    }
- }
+}

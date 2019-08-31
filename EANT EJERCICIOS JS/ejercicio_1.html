@@ -20,7 +20,7 @@
 		</header>
 
 		<section>
-			<h1>Manipulación del DOM</h1>  
+			<h1>Manipulación del DOM</h1>
 		</section>
 
 		<aside>
@@ -30,7 +30,26 @@
 		<script>
 			/* 1) Seleccionar el h1 y guardarlo en una variable */
 
+			var titulo = document.querySelector("h1")
+
+
+
+			/*MANIPULAION DE COMPORTAMIENTO*/
+			titulo.onclick = modificarTitulo
+
+      setTimeout(modificarTitulo, 3000)
+
+			function modificarTitulo (){
+				/* MANIPULACION DE CONTENIDOS */
+
 			/* 2) Modificar el texto interno de esta variable */
+			titulo.innerText = "hola desde un script de js"
+
+			/* MANIPULACION DE ESTRUCTURA */
+			titulo.id = "alto titulo"
+			titulo.style.color = "green"
+			}
+
 
 			/* 3) Una vez que funcione, probar poniendo el <script> en el <head> para corroborar que JavaScript se ejecuta secuencialmente! */
 		</script>

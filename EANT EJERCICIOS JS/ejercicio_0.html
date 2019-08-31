@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="assets/normalize.min.css">
 		<link rel="stylesheet" href="assets/style.css">
 		<link rel="stylesheet" href="assets/extra.css">
-		<title>Aprender a programar con JavaScript</title>		
+		<title>Aprender a programar con JavaScript</title>
 	</head>
 
 	<body>
@@ -40,7 +40,51 @@
 		</aside>
 
 		<script>
-		
+		/* tipos primitivos
+		// origen datos determinados
+      var nombre = "cafe" // <-- string
+			var stock = 600 // <-- int
+			var precio = 95.65 // <-- float
+			var disponible = true // <-- bool
+
+			//origen 2 : datos indeterminados
+			var preciofinal = * 1.21 //... determinable luego de una operacion logico/matematica
+		*/
+
+      var nombre = prompt ("ingrese nombre:")
+
+			while (nombre == "" || nombre == null || nombre == undefined ){
+				alert("error: el nombre no puede quedar vacio...")
+				nombre = prompt ("reingrese nombre:")
+			}
+
+
+		  var stock = prompt("ingrese stock:")
+			var precio = prompt("ingrese precio:")
+			var disponible = confirm("esta disponible para la venta?")
+
+
+
+     if (stock =="" || stock <0 || stock > 1000) {
+			alert("error: ingrese stock entre 1 y 1000 unid.")
+	  	}
+
+     if(precio =="" || precio < 0 ){
+			 alert("error: ingrese precio mayor o igual a cero")
+		 }
+
+		 if( disponible == undefined ){
+			 alert("erro: indique si esta disponible para la venta")
+		 }
+
+		 // var mensaje = " hay " + stock + " unid. de " + nombre + " que valen ARG " + precio + " c/u "
+
+     var mensaje = `hay ${stock} unid. de <strong> ${nombre} </strong> que valen ARG ${precio} c/u`
+
+		 console.log ( mensaje )
+
+     document.querySelector("article").innerHTML = mensaje
+
 		</script>
 	</body>
 </html>

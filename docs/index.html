@@ -1,28 +1,34 @@
-<!DOCTIPE HTML>
-<htmal>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <img src="https://icon2.kisspng.com/20180824/gwx/kisspng-computer-icons-pro-git-portable-network-graphics-i-git-book-pro-git-app-app-5b80546bc0a4c5.2332101615351368757891.jpg"
     <title>Aprendiendo Git</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
 
-      </style>
-      </head>
-      <body>
-        <h1>Aprendiendo Git</h1>
-        <h2 style="color:purple"> (y no morir en el intento..)</h2>
-        <p>git es un software de <strong>control de version</strong> diseñado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus torvalds</a>.</p>
-        <P>Pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número <strong> de código fuente</strong>. Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos</p>
-          <img id="foto-linus" width="150" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/800px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg">
+    </style>
+  </head>
+  <body>
+    <!--
+      Aca podes hacer anotaciones con <codigo>
+    -->
+    <img width="150" src="img/logo-git.png">
+    <h1>Aprendiendo Git</h1>
+    <h2 style="color:red;">(y no morir en el intento...)</h2>
+    <p>Git es un software de <strong>control de versiones</strong> diseñado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a>.</p>
+    <p>Es un sistema de control de versiones, es distribuido, es decir que múltiples personas pueden trabajar en equipo, es open source y también se adapta a todo tipo de proyectos desde pequeños hasta grandes, además, se pueden fusionar archivos, guarda una línea de tiempo a lo largo de todo el proyecto.</p>
+    <h3>¿Qué es Github?</h3>
+    <p>Es una plataforma de desarrollo colaborativo, o también llamada la red social de los desarrolladores donde se alojan los repositorios, el código se almacena de forma pública pero se puede hacer privado con una cuenta de pago.</p>
+    <h3>Push</h3>
+    <p>Básicamente lo que realiza un push es publicar lo que se encuentra en nuestro servidor local y llevarlo al servidor remoto de Github</p>
+    <p>El push empuja lo de nuestro servidor local al servidor remoto en github</p>
+    <h3>Pull</h3>
+    <p>El pull trae los cambios de nuestro repositorio remoto y los actualiza al repositorio local.</p>
+    <img id="foto-linus" width="150" src="img/linus-torvalds.jpg">
 
-          <script src="js/main.js"></script>
-
-          <script>
-            document.getElementById('foto-linus').onclick = mostrarAvisos
-
-
-          </script>
-
-    </body>
-  </html>
+    <script src="js/main.js"></script>
+    <script>
+      document.getElementById('foto-linus').onclick = mostrarAviso
+    </script>
+  </body>
+</html>

@@ -1,37 +1,35 @@
-/* anatomia de las reglas de css */
+/* Anatomia de las reglas CSS */
 /*
   selector {
-   propiedad: valor;
-   propiedad: valor;
-   propiedad: valor;
- }
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+  }
 */
-body{
+body {
   font-family: Arial;
   font-size: 18px;
-  color: orangered;
-  background-color: #000;
+  color: #111;
+  background-color: orange;
   text-align: justify;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-
-h1, h2, h3, h4, h5 {
-  font-family: tahoma;
-  color: orangered
+h1, h2, h3, h4, h5, h6 {
+  font-family: Tahoma;
+  color: orangered;
   text-decoration: underline;
   text-align: center;
 }
-
 h2 {
-  font-size: 18px;
+  font-size: 21px;
 }
 a {
   color: #000;
-  background-color: #fff;
+  background-color: #FFF;
   text-decoration: none;
-  font-family: Helvetica, Arial, Open Sans, Sans-Serif;
+  font-family: Helvetica, Arial, Open Sans, sans-serif;
   padding-left: 5px;
   padding-right: 5px;
 }
